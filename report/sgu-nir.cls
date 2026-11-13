@@ -1,9 +1,8 @@
-% ГОСТ-ориентированная адаптация образца НИР Алёны (29 стр.) и шаблона СГУ.
+% Класс отчёта по учебной практике «НИР» с настройками оформления по ГОСТ и требованиям СГУ.
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sgu-nir}[2026/11/11 SGU research practice, aligned to example]
+\ProvidesClass{sgu-nir}[2026/11/13 SGU research practice report]
 \LoadClass[14pt,a4paper]{extarticle}
-% В PDF-образце левое поле визуально около 25 мм, но ГОСТ 7.32-2017: >=30 мм.
-% Поэтому применено левое поле 30 мм по требованию пользователя «по ГОСТ».
+% Левое поле 30 мм в соответствии с ГОСТ 7.32-2017.
 \RequirePackage[a4paper,left=30mm,right=15mm,top=20mm,bottom=20mm,headheight=0pt,footskip=12mm]{geometry}
 \RequirePackage{setspace}
 \RequirePackage{indentfirst}
@@ -16,7 +15,7 @@
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
 \pagestyle{fancy}\fancyhf{}\fancyfoot[R]{\thepage}\renewcommand{\headrulewidth}{0pt}
-% В образце заголовки разделов и подразделов идут с красной строки.
+% Заголовки разделов и подразделов начинаются с абзацного отступа.
 \titleformat{\section}{\normalfont\bfseries}{\thesection}{0.6em}{}
 \titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.6em}{}
 \titleformat{\subsubsection}{\normalfont\bfseries}{\thesubsubsection}{0.6em}{}
@@ -39,5 +38,5 @@
 \setcounter{tocdepth}{3}
 % «ВВЕДЕНИЕ», «ЗАКЛЮЧЕНИЕ» — отдельные страницы и в содержании.
 \newcommand{\nirsection}[1]{\clearpage\phantomsection\section*{\centering #1}\addcontentsline{toc}{section}{#1}}
-% В исходном образце библиография отсутствует в содержании.
+% Список использованных источников выводится без записи в содержании.
 \newcommand{\nirsectionnoentry}[1]{\clearpage\phantomsection\section*{\centering #1}}
