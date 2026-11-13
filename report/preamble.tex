@@ -1,0 +1,25 @@
+\usepackage{fontspec}
+\setmainfont{Tinos}
+\setsansfont{Liberation Sans}
+\setmonofont{DejaVu Sans Mono}[Scale=0.85]
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguage{english}
+\newfontfamily\cyrillicfont{Tinos}
+\newfontfamily\cyrillicfontsf{Liberation Sans}
+\newfontfamily\cyrillicfonttt{DejaVu Sans Mono}
+\usepackage{amsmath,amssymb,array,booktabs,longtable,tabularx,graphicx,enumitem}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric}
+\usepackage[backend=biber,style=gost-numeric,sorting=none,autolang=other,doi=true,url=false,isbn=false]{biblatex}
+\addbibresource{bibliography/references.bib}
+\usepackage[hidelinks,unicode=true]{hyperref}
+\usepackage{xurl}
+\usepackage{bookmark}
+\setlist[itemize]{leftmargin=*,topsep=0.3\baselineskip,itemsep=0.1\baselineskip}
+\setlist[enumerate]{leftmargin=*,topsep=0.3\baselineskip,itemsep=0.1\baselineskip}
+\renewcommand{\arraystretch}{1.2}
+\emergencystretch=2em
+\sloppy
+
+\gappto\captionsrussian{\renewcommand{\contentsname}{СОДЕРЖАНИЕ}}

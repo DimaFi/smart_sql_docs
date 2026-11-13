@@ -1,0 +1,23 @@
+% SmartSQL, отчёт о практике НИР, 1 курс / 1 семестр.
+% XeLaTeX -> Biber -> XeLaTeX -> XeLaTeX, или latexmk -xelatex.
+\documentclass{sgu-nir}
+\input{preamble}
+\begin{document}
+\input{titlepage}
+\setcounter{page}{2}
+\begingroup
+\singlespacing
+\tableofcontents
+\endgroup
+\clearpage
+\input{sections/introduction}
+\input{sections/problem}
+\input{sections/existing-solutions}
+\input{sections/relational-theory}
+\input{sections/intelligent-querying}
+\input{sections/adaptive-ui}
+\input{sections/research-problem}
+\input{sections/conclusion}
+\nirsectionnoentry{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+\printbibliography[heading=none,title={}]
+\end{document}

@@ -1,0 +1,53 @@
+% Поля нужно заполнить перед сдачей (ФИО в родительном падеже,
+% кафедра, группа, руководитель, сроки). В образце Алёны 2024/25,
+% но мы НЕ переносим чужие персональные данные/даты.
+\newcommand{\StudentCourse}{1}
+\newcommand{\StudentGroup}{\rule{15mm}{0.4pt}}
+\newcommand{\StudentFIO}{\rule{94mm}{0.4pt}}
+\newcommand{\DepartmentName}{\rule{87mm}{0.4pt}}
+\newcommand{\ChairHeadName}{\rule{49mm}{0.4pt}}
+\newcommand{\PracticeDuration}{\rule{13mm}{0.4pt}}
+\newcommand{\PracticeStart}{\rule{25mm}{0.4pt}}
+\newcommand{\PracticeEnd}{\rule{25mm}{0.4pt}}
+\newcommand{\SupervisorPosition}{\rule{30mm}{0.4pt}}
+\newcommand{\SupervisorName}{\rule{34mm}{0.4pt}}
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+МИНОБРНАУКИ РОССИИ\\[0.2em]
+Федеральное государственное бюджетное образовательное учреждение\\
+высшего образования\\
+\textbf{«САРАТОВСКИЙ НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ\\
+ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМЕНИ\\
+Н. Г. ЧЕРНЫШЕВСКОГО»}\\
+Факультет компьютерных наук и информационных технологий
+\end{center}
+\vspace{2mm}
+\begin{flushright}
+\begin{minipage}{61mm}
+\raggedright
+УТВЕРЖДАЮ\\
+Зав. кафедрой\\[1mm]
+\hrulefill\\[-0.6em]
+\makebox[\linewidth][c]{\footnotesize (ФИО)}
+\vspace{0mm}\hrulefill\\[-0.6em]
+\makebox[\linewidth][c]{\footnotesize (подпись, дата)}
+\end{minipage}
+\end{flushright}
+\vspace{4mm}
+\begin{center}\textbf{ОТЧЕТ О ПРАКТИКЕ}\end{center}
+\vspace{3mm}
+\noindent студента \StudentCourse{} курса, \StudentGroup{} группы, факультета КНиИТ\\
+\StudentFIO\\[8mm]
+\noindent вид практики: учебная (``Научно-исследовательская работа'')\\
+кафедра: \DepartmentName\\[2mm]
+курс: \StudentCourse{}\\[2mm]
+семестр: 1\\[2mm]
+продолжительность: \PracticeDuration{} нед с \PracticeStart{} по \PracticeEnd\\
+\vspace{3mm}
+\noindent Руководитель практики:\\[3mm]
+\noindent\begin{tabularx}{\textwidth}{@{}X X X@{}}
+\centering\SupervisorPosition & \centering\rule{36mm}{0.4pt} & \centering\arraybackslash\SupervisorName\\[-0.3em]
+\centering\footnotesize (должность) & \centering\footnotesize (подпись, дата) & \centering\arraybackslash\footnotesize (ФИО)
+\end{tabularx}
+\end{titlepage}
