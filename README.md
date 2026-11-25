@@ -13,11 +13,11 @@
 - автоматические библиография и перекрёстные ссылки через `biblatex-gost` + Biber;
 - сборка PDF локально и в GitHub Actions.
 
-**Внимание!** Левое поле установлено **30 мм** согласно ГОСТ 7.32–2017. Перед сдачей проверьте требования научного руководителя и кафедры. ФИО, группа, кафедра, руководитель и фактические даты практики оставлены для заполнения.
+**Внимание!** Левое поле установлено **30 мм** согласно ГОСТ 7.32–2017. Перед сдачей проверьте требования научного руководителя и кафедры. ФИО, руководитель и фактические даты практики оставлены для заполнения.
 
 ## Быстрый старт
 
-Установите TeX Live с XeLaTeX, Biber, `biblatex-gost`, `latexmk` и шрифтом Tinos (пакет `fonts-croscore` в Debian/Ubuntu).
+Установите TeX Live с XeLaTeX, Biber, `biblatex-gost`, `latexmk` и шрифтом Times New Roman. При отсутствии Times New Roman сборка использует Tinos (пакет `fonts-croscore` в Debian/Ubuntu).
 
 ```bash
 python3 scripts/check_bibliography.py
@@ -31,7 +31,7 @@ latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex
 
 ## Как персонализировать документ
 
-Откройте `report/titlepage.tex` и заполните команды `\StudentGroup`, `\StudentFIO`, `\DepartmentName`, `\PracticeDuration`, `\PracticeStart`, `\PracticeEnd`, `\SupervisorPosition`, `\SupervisorName`.
+Откройте `report/titlepage.tex` и заполните команды `\StudentFIO`, `\PracticeDuration`, `\PracticeStart`, `\PracticeEnd`, `\SupervisorPosition`, `\SupervisorName`.
 
 Материал по разделам расположен в `report/sections/`. Источники — `report/bibliography/references.bib`, реестр ссылок на издателей и ограничения аудита — `docs/source-audit.md`. Проверка количества, полноты полей и ссылок — `scripts/check_bibliography.py`.
 
